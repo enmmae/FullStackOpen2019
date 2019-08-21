@@ -1,5 +1,9 @@
 # FullStackOpen2019
 
+Sivulta https://mooc.fi/ löytyvän kurssin *[Full Stack Open 2019](https://fullstackopen.com/) - Syväsukellus moderniin websovelluskehitykseen* tehtävät. Tehty elokuussa 2019.
+
+
+
 ## Osa 0 Web-sovellusten toiminnan perusteet
 
 ### 0.4 ja 0.6 uusi muistiinpano
