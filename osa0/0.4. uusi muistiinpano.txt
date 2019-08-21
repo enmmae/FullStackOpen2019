@@ -1,0 +1,37 @@
+0.4: uusi muistiinpano
+
+Kaavio on luotu WebSequenceDiagrams-palvelussa (https://www.websequencediagrams.com/), 
+seuraavasti:
+
+
+title Käyttäjä luo uuden muistiinpanon
+
+selain->palvelin: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note
+selain-->palvelin: "note" tekstikenttään kirjoitettu data
+
+note over palvelin:
+Palvelin luo uutta muistiinpanoa vastaavan 
+olion ja laittaa sen muistiinpanot sisältävään 
+taulukkoon nimeltään notes
+end note
+
+selain->palvelin: HTTP GET https://fullstack-exampleapp.herokuapp.com/notes
+palvelin-->selain: HTML-koodi
+selain->palvelin: HTTP GET https://fullstack-exampleapp.herokuapp.com/main.css
+palvelin-->selain: main.css
+selain->palvelin: HTTP GET https://fullstack-exampleapp.herokuapp.com/main.js
+palvelin-->selain: main.js
+
+note over selain:
+selain alkaa suorittaa js-koodia
+joka pyytää JSON-datan palvelimelta
+end note
+
+selain->palvelin: HTTP GET https://fullstack-exampleapp.herokuapp.com/data.json
+palvelin-->selain: [{ content: "HTML on helppoa", date: "2019-01-01" }, ...]
+
+note over selain:
+selain suorittaa tapahtumankäsittelijän
+joka renderöi muistiinpanot näytölle
+end note
+

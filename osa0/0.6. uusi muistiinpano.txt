@@ -1,0 +1,23 @@
+0.5: Single Page App
+
+Kaavio on luotu WebSequenceDiagrams-palvelussa (https://www.websequencediagrams.com/), 
+seuraavasti:
+
+
+title Uusi muistiinpano SPA:ssa
+
+selain->palvelin: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+
+note over selain:
+Lähettämisen hoitaa selaimen lataamassa JavaScript-tiedostossa 
+määritelty koodi, joka rekisteröi tapahtumakäsittelijän ja estää 
+lomakkeen lähetyksen oletusarvoisen toiminnan. Tämän jälkeen 
+se luo muistiinpanon, lisää sen muistiinpanojen listalle komennolla 
+notes.push(note), piirtää ruudun sisällön eli muistiinpanojen 
+listan uudelleen ja lähettää uuden muistiinpanon palvelimelle.
+end note
+
+selain-->palvelin: JSON-muodossa oleva uusi muistiinpano
+palvelin-->selain: kyselyyn vastataan statuskoodilla 201 created
+
+
