@@ -39,7 +39,7 @@ Start server to port 3001 with `npx json-server --port=3001 --watch db.json`
 
 ## Osa 3 Palvelimen ohjelmointi NodeJS:n Express-kirjastolla
 
-### 3.1-3.22: puhelinluettelo-frontend ja puhelinluettelo-backend
+### 3.1-3.22: puhelinluettelo-backend ja puhelinluettelo-frontend
 
 3.1.-3.11. tehdyt kohdat eritelty tiedostoon index3.1.-3.11.js koska melkein kaikkia kohtia piti muokata tästä edetessä.
 
@@ -79,7 +79,7 @@ http://localhost:3003/api/blogs	 |  http://localhost:3003/api/users
 
 ## Osa 5 React-sovelluksen testaaminen, custom hookit
 
-### 5.1-5.20: bloglist-frontend ja bloglist-backend
+### 5.1-5.20: bloglist-backend ja bloglist-frontend
 
 Run puhelinluettelo-backend with `npm run watch` and puhelinluettelo-frontend with `npm start`.
 These work together locally at http://localhost:3000/ and backend at http://localhost:3003/api/users & .../api/blogs
@@ -111,7 +111,7 @@ Run application with `npm start`.
 
 Run with `npm start`
 
-### 7.4-7.19: bloglist-frontend ja bloglist-backend
+### 7.4-7.19: bloglist-backend ja bloglist-frontend
 
 Run backend with `npm run watch` and frontend with `npm start`
 
@@ -124,3 +124,11 @@ Check with `npm run eslint`
 Run backend with `npm run start:test`.
 Kun backend ja frontend ovat käynnissä, voidaan käynnistää Cypress komennolla `npm run cypress:open`
 
+
+
+
+## Osa 8 GraphQL
+
+#### 8.1-8.21, 8.23-8.24, 8.26: library-backend ja library-frontend
+
+Run backend with `npm run watch` and frontend with `npm start`
